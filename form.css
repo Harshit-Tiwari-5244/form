@@ -1,50 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background: url(./images2/lock.jpeg) no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-    
-     
+
+
+
 }
 
-form{
-    /* border: 2px solid aqua; */
+form {
     border-radius: 16px;
     color: #333;
     min-width: 260px;
     box-shadow: 10px 10px 10px 10px #1fabea9c;
+    background: transparent;
 }
 
-form h2{
+form:hover {
+    transform: scale(0.9);
+    transition: 0.9s;
+}
+
+form h2 {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
 }
 
-.details{
+.details {
     padding-top: 10px;
     height: 250px;
     position: relative;
 
 }
 
-label{
+label {
     display: block;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-input{
+input {
     width: 100%;
     padding: 6px;
     margin-bottom: 12px;
@@ -54,15 +61,23 @@ input{
     border-color: rgb(85, 105, 205);
 }
 
-.submit-button{
+input:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.submit-button {
     padding: 10px 40px;
     position: absolute;
     left: 27%;
     bottom: 15px;
     border-radius: 30px;
     background-color: #D3D3D3;
-    }
+    cursor: pointer;
+}
 
-    /* .submit-button:hover{
-        background-color: rgb(70, 147, 229);
-    } */
+.submit-button:hover {
+    background-color: rgb(70, 147, 229);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
